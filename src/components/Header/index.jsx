@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <Container>
       <span class="material-symbols-outlined">contacts</span>
-      <Title>Contacts</Title>
+      <Title>Contatos</Title>
     </Container>
   );
 };

@@ -11,6 +11,11 @@ export const Item = styled.div`
   form {
     display: flex;
     flex-direction: column;
+
+    label {
+      font-family: nunito, sans-serif;
+      font-weight: bold;
+    }
   }
 `;
 

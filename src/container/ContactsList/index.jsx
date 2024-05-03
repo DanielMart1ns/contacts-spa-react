@@ -1,5 +1,5 @@
 import Contact from "../../components/Contact";
-import { Main } from "./styles";
+import { CirclePlus, Main } from "./styles";
 
 const ContactsList = () => {
   return (
@@ -7,6 +7,7 @@ const ContactsList = () => {
       <Main>
         <Contact />
       </Main>
+      <CirclePlus to="/new">+</CirclePlus>
     </>
   );
 };
