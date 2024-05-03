@@ -24,4 +24,16 @@ export const CirclePlus = styled(Link)`
   position: fixed;
   bottom: 40px;
   right: 80px;
+
+  &:hover {
+    background-color: #fff;
+    color: ${variaveis.themeColor};
+    border: 2px solid ${variaveis.themeColor};
+    transition: all 0.1s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 40px;
+    right: 32px;
+  }
 `;

@@ -78,8 +78,17 @@ export const Button = styled.button`
   border-radius: 12px;
   font-weight: bold;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: ${(props) => (props.register ? `${variaveis.themeColor}` : "red")};
+    border: 2px solid;
+    border-color: ${(props) =>
+      props.register ? `${variaveis.themeColor}` : "red"};
+    transition: all 0.1s ease-in-out;
+  }
 
   span {
     margin-left: 4px;
