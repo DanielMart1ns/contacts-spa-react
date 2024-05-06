@@ -39,3 +39,38 @@ export const DataContact = styled.div`
     color: ${variaveis.contactText};
   }
 `;
+
+export const ContactOptions = styled.div`
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Button = styled.button`
+  width: 120px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) =>
+    props.toEdit ? `${variaveis.themeColor}` : "red"};
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+    color: ${(props) => (props.toEdit ? `${variaveis.themeColor}` : "red")};
+    border: 2px solid;
+    border-color: ${(props) =>
+      props.toEdit ? `${variaveis.themeColor}` : "red"};
+    transition: all 0.1s ease-in-out;
+  }
+
+  span {
+    margin-left: 4px;
+    font-size: 18px;
+  }
+`;

@@ -1,4 +1,4 @@
-import { DataContact, Item } from "./styles";
+import { Button, DataContact, Item, ContactOptions } from "./styles";
 
 const Contact = ({ name, email, tel }) => {
   return (
@@ -20,6 +20,16 @@ const Contact = ({ name, email, tel }) => {
             <input type="tel" value={tel} />
             <span class="material-symbols-outlined">call</span>
           </DataContact>
+          <ContactOptions>
+            <Button toEdit>
+              Editar
+              <span class="material-symbols-outlined">edit</span>
+            </Button>
+            <Button>
+              Remover
+              <span class="material-symbols-outlined">delete</span>
+            </Button>
+          </ContactOptions>
         </form>
       </Item>
     </>
