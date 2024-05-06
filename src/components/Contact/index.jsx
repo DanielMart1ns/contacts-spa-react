@@ -1,6 +1,9 @@
+import { useDispatch } from "react-redux";
 import { Button, DataContact, Item, ContactOptions } from "./styles";
+import { removeContact } from "../../store/reducers/addContact";
 
 const Contact = ({ name, email, tel }) => {
+  const dispatch = useDispatch();
   return (
     <>
       <Item>
@@ -25,7 +28,7 @@ const Contact = ({ name, email, tel }) => {
               Editar
               <span class="material-symbols-outlined">edit</span>
             </Button>
-            <Button>
+            <Button onClick={() => dispatch(removeContact(name))}>
               Remover
               <span class="material-symbols-outlined">delete</span>
             </Button>

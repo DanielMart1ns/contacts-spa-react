@@ -8,7 +8,12 @@ const ContactsList = () => {
     <>
       <Main>
         {dataUser.map((data) => (
-          <Contact name={data.name} email={data.email} tel={data.tel} />
+          <Contact
+            name={data.name}
+            email={data.email}
+            tel={data.tel}
+            key={data.name}
+          />
         ))}
       </Main>
       <CirclePlus to="/new">+</CirclePlus>

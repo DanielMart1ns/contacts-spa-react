@@ -28,10 +28,10 @@ const addContact = createSlice({
       return [...state, contactData];
     },
     removeContact: (state, action) => {
-      state = state.filter((contact) => contact.name !== action.payload.name);
+      return state.filter((contact) => contact.name !== action.payload);
     },
   },
 });
 
-export const { addNewContact } = addContact.actions;
+export const { addNewContact, removeContact } = addContact.actions;
 export default addContact.reducer;
