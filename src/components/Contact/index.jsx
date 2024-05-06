@@ -1,23 +1,23 @@
 import { DataContact, Item } from "./styles";
 
-const Contact = () => {
+const Contact = ({ name, email, tel }) => {
   return (
     <>
       <Item>
         <form>
           <label htmlFor="">Nome Completo</label>
           <DataContact>
-            <input type="text" value={"Daniel M. M. Rodrigues"} />
+            <input type="text" value={name} />
             <span class="material-symbols-outlined">contacts_product</span>
           </DataContact>
           <label htmlFor="">E-mail</label>
           <DataContact>
-            <input type="email" value={"danielmmrodrigues09@gmail.com"} />
+            <input type="email" value={email} />
             <span class="material-symbols-outlined">alternate_email</span>
           </DataContact>
           <label htmlFor="">Tel</label>
           <DataContact>
-            <input type="tel" value={"(11) 9897987"} />
+            <input type="tel" value={tel} />
             <span class="material-symbols-outlined">call</span>
           </DataContact>
         </form>

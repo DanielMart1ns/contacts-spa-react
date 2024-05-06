@@ -8,7 +8,7 @@ import { createSlice } from "@reduxjs/toolkit";
 //   }
 // }
 
-const initialState = [{}];
+const initialState = [];
 
 const addContact = createSlice({
   name: "add",
@@ -16,8 +16,16 @@ const addContact = createSlice({
   reducers: {
     addNewContact: (state, action) => {
       const contactData = action.payload;
-      state.push(contactData);
-      console.log(initialState);
+
+      if (!action.payload.name) {
+        alert("Insira um nome para o contato");
+        return;
+      } else if (!action.payload.email && !action.payload.tel) {
+        alert("Insira pelo menos uma forma de contato");
+        return;
+      }
+
+      return [...state, contactData];
     },
   },
 });

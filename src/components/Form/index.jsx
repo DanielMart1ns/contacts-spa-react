@@ -32,7 +32,13 @@ const Form = () => {
         tel,
       })
     );
+
+    if (name !== "" && (email !== "" || tel !== undefined)) {
+      backToHome();
+      return;
+    }
   };
+
   return (
     <>
       <Container>
