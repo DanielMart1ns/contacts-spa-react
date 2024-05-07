@@ -19,7 +19,7 @@ const addContact = createSlice({
       }
 
       if (iqualName) {
-        alert("Já possui um item com esse nome");
+        alert("Já possui um contato com esse nome");
         return;
       }
 
