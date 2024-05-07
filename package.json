@@ -39,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "styled-components": "^6.1.8",
-    "typescript": "^5.4.5"
+    "styled-components": "^6.1.8"
   }
 }
