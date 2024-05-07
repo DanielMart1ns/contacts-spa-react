@@ -20,6 +20,12 @@ export const Item = styled.div`
   }
 `;
 
+export const EditingText = styled.p`
+  font-weight: bolder;
+  font-family: Nunito, sans-serif;
+  color: ${variaveis.themeColor};
+`;
+
 export const DataContact = styled.div`
   display: grid;
   grid-template-columns: 90% auto;
@@ -73,5 +79,16 @@ export const Button = styled.button`
   span {
     margin-left: 4px;
     font-size: 18px;
+  }
+`;
+
+export const ButtonStopEdit = styled(Button)`
+  background-color: green;
+  width: 140px;
+
+  &:hover {
+    background-color: #fff;
+    border-color: green;
+    color: green;
   }
 `;
