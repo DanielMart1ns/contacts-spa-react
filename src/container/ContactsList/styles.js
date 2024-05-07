@@ -34,6 +34,6 @@ export const CirclePlus = styled(Link)`
 
   @media (max-width: 768px) {
     bottom: 40px;
-    right: 32px;
+    right: 16px;
   }
 `;

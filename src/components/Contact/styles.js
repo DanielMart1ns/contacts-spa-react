@@ -5,6 +5,7 @@ export const Item = styled.div`
   border: 1px solid ${variaveis.themeColor};
   border-radius: 12px;
   width: 300px;
+  margin-bottom: 12px;
   padding: 8px 12px 22px;
   background-color: #f7f7f7;
 

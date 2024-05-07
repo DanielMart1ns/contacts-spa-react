@@ -8,17 +8,17 @@ const Contact = ({ name, email, tel }) => {
     <>
       <Item>
         <form>
-          <label htmlFor="">Nome Completo</label>
+          <label>Nome Completo</label>
           <DataContact>
-            <input type="text" value={name} />
+            <input type="text" value={name} disabled />
             <span class="material-symbols-outlined">contacts_product</span>
           </DataContact>
-          <label htmlFor="">E-mail</label>
+          <label>E-mail</label>
           <DataContact>
             <input type="email" value={email} />
             <span class="material-symbols-outlined">alternate_email</span>
           </DataContact>
-          <label htmlFor="">Tel</label>
+          <label>Tel</label>
           <DataContact>
             <input type="tel" value={tel} />
             <span class="material-symbols-outlined">call</span>

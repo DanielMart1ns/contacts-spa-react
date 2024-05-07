@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   ArrowBack,
   Container,
@@ -19,6 +19,7 @@ const Form = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const names = useSelector((state) => state.add);
 
   const backToHome = () => {
     navigate("/");
@@ -34,7 +35,7 @@ const Form = () => {
     );
 
     if (name !== "" && (email !== "" || tel !== undefined)) {
-      backToHome();
+      if (!names.some((data) => data.name === name)) backToHome();
       return;
     }
   };
